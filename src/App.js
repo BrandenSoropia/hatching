@@ -1,8 +1,14 @@
 import React from "react";
 import "./App.css";
+import { ThemeProvider } from "styled-components";
+import { theme } from "ui-kit";
 
-function App() {
-  return <div className="App">Hello!</div>;
-}
+const App = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <div className="App">Hello!</div>
+    </ThemeProvider>
+  );
+};
 
 export default App;
